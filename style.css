@@ -1,0 +1,103 @@
+#ludo>div{
+    border: 1px solid black;
+}
+#ludo{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+}
+#ludo .one{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+#ludo .two{
+    grid-column-start: 10;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+#ludo .mid{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    background-image: conic-gradient(yellow 45deg,greenyellow 45deg,greenyellow 135deg,red 135deg,red 225deg,blue 225deg,blue 315deg,yellow 315deg);
+}
+#ludo .three{
+    grid-row-start: 10;
+    grid-row-end: 16;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+#ludo .four{
+    grid-row-start: 10;
+    grid-row-end: 16;
+    grid-column-start: 10;
+    grid-column-end: 16;
+}
+.ten1,.ten2,.ten3,.ten4{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin-top: 18px;
+    margin-left: 18px;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30px 30px;
+    gap: 5px;
+    justify-content: space-around;
+}
+.ten1>div,.ten2>div,.ten3>div,.ten4>div{
+    width: 30px;
+    margin-top: 3px;
+    /* margin-bottom: 6px;
+    margin-left: 3px;
+    margin-right: 3px; */
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.one{
+    background-color: blue;
+}
+.one .ten1 div{
+    background-color: blue;
+}
+.two{
+    background-color: yellow;
+}
+.two .ten2 div{
+    background-color: yellow;
+}
+.three{
+    background-color: red;
+}
+.three .ten3 div{
+    background-color: red;
+}
+.four{
+    background-color: greenyellow;
+}
+.four .ten4 div{
+    background-color: greenyellow;
+}
+.chess div{
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+}
+.chess{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+}
+.d{
+    background-color: rgb(252, 146, 146);
+}
+.e{
+    transform: rotate(180deg);
+}
